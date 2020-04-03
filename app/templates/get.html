@@ -1,0 +1,57 @@
+{% extends 'login.html' %}
+
+{% block title %}
+    Buscar
+{% endblock %}
+
+{% block sugestion %}
+    <h1>
+        <b>Buscar funcionário</b>
+        <p>Digite os dados do funcionário que deseja buscar</p>
+    </h1>
+{% endblock %}
+
+{% block content %}
+    <form action="" method="POST">
+        {{ form.csrf_token }}
+        <div class="form-group">
+            <label>ID:</label>
+                <div class="input">
+                    {{ form.colab_id(_class="form-control", placeholder="ID_do_funcionário") }}
+                </div>
+        </div>
+        <div class="button">
+            <button type="submit">Buscar</button>
+        </div>
+
+    </form>
+{% endblock %}
+
+{% block result %}
+
+    {% if colab %}
+    <h1>Funcionário encontrado com sucesso!</h1>
+    <table class="tabela" border="1">
+        <tr>
+            <th>ID</th>
+            <th>Nome</th>
+            <th>Idade</th>
+            <th>Cargo</th>
+        </tr>
+        <tr>
+            <td>{{ colab.colab_id }}</td>
+            <td>{{ colab.nome }}</td>
+            <td>{{ colab.idade }}</td>
+            <td>{{ colab.cargo }}</td>
+        </tr>
+    </table>
+    {% endif %}
+
+    {% if aux %}
+    <h1>ID não encontrado!</h1>
+    {% endif %}
+{% endblock %}
+
+{% block icone %}
+<h1><b>&#8981;</b></h1>
+{% endblock %}

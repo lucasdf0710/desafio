@@ -1,0 +1,88 @@
+{% extends 'login.html' %}
+
+{% block title %}
+    Atualizar
+{% endblock %}
+
+{% block sugestion %}
+    <h1>
+        <b>Atualizar funcionário</b>
+        <p>Digite os dados do funcionário que deseja atualizar</p>
+    </h1>
+{% endblock %}
+
+{% block content %}
+<form action="" method="POST">
+    {{ form.csrf_token }}
+    <div class="form-group">
+        <label>ID:</label>
+            <div class="input">
+                {{ form.colab_id(_class="form-control", placeholder="ID_do_funcionário") }}
+            </div>
+    </div>
+    <div class="form-group">
+            <label>Nome:</label>
+        <div class="input">                
+            {{ form.nome(_class="form-control", placeholder="Nome do funcionário") }}
+        </div>
+    </div>
+    <div class="form-group">
+        <label>Idade:</label>
+        <div class="input">
+            {{ form.idade(_class="form-control", placeholder="Idade do funcionário") }}
+        </div>
+    </div>
+    <div class="form-group">
+        <label>Cargo:</label>
+        <div class="input">                
+            {{ form.cargo(_class="form-control", placeholder="Cargo do funcionário") }}
+        </div>
+    </div>
+    <div class="button">
+        <button type="submit">Atualizar</button>
+    </div>
+
+</form>
+{% endblock %}
+
+{% block result %}
+
+    {% if colab_encontrado %}
+    <table class="tabela" border="1">
+        <tr>
+            <th>ID</th>
+            <th>Nome</th>
+            <th>Idade</th>
+            <th>Cargo</th>
+        </tr>
+        <tr>
+            <td>{{ colab_encontrado.colab_id }}</td>
+            <td>{{ colab_encontrado.nome }}</td>
+            <td>{{ colab_encontrado.idade }}</td>
+            <td>{{ colab_encontrado.cargo }}</td>
+        </tr>
+        <h1>Funcionário atualizado com Sucesso!</h1>
+    </table>
+    {% endif %}
+    {% if colab_novo %}
+    <table class="tabela" border="1">
+        <tr>
+            <th>ID</th>
+            <th>Nome</th>
+            <th>Idade</th>
+            <th>Cargo</th>
+        </tr>
+        <tr>
+            <td>{{ colab_novo.colab_id }}</td>
+            <td>{{ colab_novo.nome }}</td>
+            <td>{{ colab_novo.idade }}</td>
+            <td>{{ colab_novo.cargo }}</td>
+        </tr>
+        <h1>Funcionário cadastrado com sucesso!</h1>
+    </table>
+    {% endif %}
+{% endblock %}
+
+{% block icone %}
+<h1>&#9998;</h1>
+{% endblock %}

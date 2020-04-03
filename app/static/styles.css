@@ -1,0 +1,191 @@
+html,body {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color:rgb(24, 199, 88);
+    font-family: 'Roboto', sans-serif;
+}
+.navigation{
+    background-color: white;
+    height: 50px;
+}
+.picture img{
+    width: 80px;
+    margin-left: 20px;
+}
+
+.sugestion{
+    text-align: left;
+    font-size: 10px;
+    color: white;
+    margin-bottom: 0%;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: center;
+}
+.sugestion h1{
+    margin-bottom: 0px;
+    font-size: 30px;
+}
+.sugestion p{
+    margin-top: 0px;
+    font-size: 20px;
+    margin-bottom: 2%;
+}
+
+.busca-post{
+    color: black;
+    border-radius: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+.busca-post h1{
+    font-size: 20px;
+}
+.form-group{
+    font-size: 18px;
+    margin-left: 0;
+}
+.form-group div{
+    display: inline-block;
+}
+.btn{
+    text-align: right;
+}
+form {
+    background-color: white;
+    margin: 0 auto;
+    width: 300px;
+    padding: 1em;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+}
+form div + div {
+    margin-top: 3px;
+}
+.form-group label {
+    display: inline-block;
+    width: 90px;
+    text-align: right;
+    font-family: 'Roboto', sans-serif;
+}
+.button {
+    padding-left: 90px;
+}
+.button button {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        color: #ffffff;
+        padding: 8px 15px;
+        background: -webkit-gradient(
+            linear, left top, left bottom,
+            from(#030405),
+            to(#3c8a1d));
+        background: linear-gradient(
+            top,
+            #030405 0%,
+            #3c8a1d);
+        border-radius: 10px;
+        border: 0px solid #287509;
+        box-shadow:
+            0px 1px 3px rgba(250,232,232,0),
+            inset 0px 0px 1px rgba(128,042,128,0);
+        text-shadow:
+            0px -1px 0px rgba(025,138,029,1),
+            0px 1px 0px rgba(255,255,255,0.3);
+}
+
+.tabela{
+    color: black;
+    height: 150px;
+    width: 33%;
+    margin-left:33%;
+    margin-right:33%;
+    margin-bottom: 50px;
+    border-radius: 10px;
+}
+
+.title{
+    margin-top: 0;
+    margin-left: 30px;
+    font-family: 'Baloo Thambi 2', cursive;
+    font-size: 35px;
+    margin-bottom: 0px;
+}
+.title h1{
+    margin:30px 0px 0px 30px;
+    height:80px;
+}
+.title b{
+    height: 80px;
+}
+.capa{
+    margin-top: 0px;
+    height: 550px;
+}
+.capa div{
+    display:inline-block;
+    margin-top: 0px;
+}
+.pic{
+    padding-top: 0px;
+    text-align: center;
+    margin-right: 30px;
+}
+.pic img{
+    width: 350px;
+    margin-top: 0;
+}
+.index{
+    vertical-align: top;
+    color: black;
+    height: 150px;
+    width: 300px;
+    padding-top: 100px;
+    margin-left:150px;
+    margin-right:400px;
+    padding-right: -50px;
+    padding-left: 50px;
+}
+.index a{
+    text-decoration: none;
+    color:black;
+}
+.link a{
+    padding-top: 3px;
+    padding-bottom:5px;
+    width: 300px;
+}
+.link div{
+    display: inline-block;
+    margin-top: 20px;
+}
+.link_text{
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+    height: 25px;
+    font-size: 18px;
+    width: 270px;
+}
+.entity{
+    display: inline-block;
+    width: 25px;
+    text-align: center;
+    font-size: 22px;
+}
+.icone{
+    text-align: center;
+    font-size: 80px;
+    color: white;
+}
+.icone h1{
+    margin: 0px;
+}
+.result{
+    text-align: center;
+    color: white;
+}
+.result h1{
+    margin-top: 30px;
+}
