@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Stone - Consulta de Dados</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@700&display=swap" rel="stylesheet">  
+</head>
+
+<body>
+    <div class="navigation">
+        <div class="picture">
+            <a href="/home"><img src="{{ url_for('static', filename='Stone_picture.png') }}" alt="Logo Stone"></a>
+        </div>
+    </div>
+    <div class="title">
+        <h1><b>Consulta de Dados</b></h1>
+    </div>
+    <div class="capa">
+        <div class="index">
+            <a class="link" href="/search"><div class="entity"><b>&#8981;</b></div><div class="link_text">Buscar funcionário</div></a>
+            <br>
+            <a class="link" href="/add"><div class="entity">&#10010;</div><div class="link_text">Adicionar funcionário</div></a>
+            <br>
+            <a class="link" href="/update"><div class="entity">&#9998;</div><div class="link_text">Atualizar funcionário</div></a>
+            <br>
+            <a class="link" href="/delete"><div class="entity"><b>&#128465;</b></div><div class="link_text">Excluir funcionário</div></a>
+        </div>
+        <div class="pic">
+            <img src="{{ url_for('static', filename='index_pic.png') }}" alt="Logo Stone">
+        </div>
+    </div>
+</body>
+
+</html>

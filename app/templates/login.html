@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<head>
+    <title>Stone - {% block title %}{% endblock %} Funcionário</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet"> 
+
+</head>
+<body>
+    <div class="navigation">
+        <div class="picture">
+            <a href="/home"><img src="{{ url_for('static', filename='Stone_picture.png') }}" alt="Logo Stone"></a>
+        </div>
+    </div>
+    <div class="icone">
+        {% block icone %}
+        {% endblock %}
+    </div>
+    <div class="sugestion">
+            {% block sugestion %}
+            {% endblock %}
+    </div>
+    <div class="busca-post">
+        {% block content %}
+        {% endblock %}
+    </div>
+    <div class="result">
+        {% block result %}
+        {% endblock %}
+    </div>
+</body>
+
+
+</html>
